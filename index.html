@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a1018">
+    <meta name="description" content="Registre sua entrada ou saída de forma simples e rápida.">
+    <title>Bate Ponto | Seu registro, em um toque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <div class="page-shell">
+        <header class="site-header">
+            <div class="brand" aria-label="Bate Ponto">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" fill="none"><path d="M20 8v12l8 5" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="3"/></svg>
+                </span>
+                <span>Bate<span class="brand-accent">Ponto</span></span>
+            </div>
+            <span class="header-tag"><span class="status-dot"></span> Registro de ponto</span>
+        </header>
+
+        <main class="main-content">
+            <div class="intro">
+                <span class="eyebrow"><span class="eyebrow-line"></span> Simples assim</span>
+                <h1>Seu dia começa<br><span>com um toque.</span></h1>
+                <p>O momento certo, registrado sem complicação. Escolha a ação abaixo e pronto.</p>
+            </div>
+
+            <section class="point-card" aria-labelledby="card-title">
+                <div class="card-glow" aria-hidden="true"></div>
+                <div class="card-topline">
+                    <span class="card-kicker"><span class="live-indicator"></span> AGORA</span>
+                    <span id="current-date" class="current-date">--</span>
+                </div>
+
+                <div class="clock-wrap" aria-label="Horário atual">
+                    <time id="current-time" class="clock">--:--<span>:--</span></time>
+                    <span class="clock-caption">Horário local</span>
+                </div>
+
+                <div class="card-divider"></div>
+
+                <div class="action-heading">
+                    <div>
+                        <span class="section-number">01 / 02</span>
+                        <h2 id="card-title">O que vamos registrar?</h2>
+                    </div>
+                    <span class="action-hint">Selecione uma opção</span>
+                </div>
+
+                <div class="actions">
+                    <button id="entrada" class="action-button entry-button" type="button">
+                        <span class="button-shine" aria-hidden="true"></span>
+                        <span class="button-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 4h1v16h-1" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                        </span>
+                        <span class="button-copy"><strong>Registrar entrada</strong><small>Começar meu expediente</small></span>
+                        <span class="button-arrow" aria-hidden="true">↗</span>
+                    </button>
+
+                    <button id="saida" class="action-button exit-button" type="button">
+                        <span class="button-shine" aria-hidden="true"></span>
+                        <span class="button-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M20 12H6m6-6-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 4H4v16h1" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                        </span>
+                        <span class="button-copy"><strong>Registrar saída</strong><small>Finalizar meu expediente</small></span>
+                        <span class="button-arrow" aria-hidden="true">↗</span>
+                    </button>
+                </div>
+
+                <p class="card-footnote"><span aria-hidden="true">✦</span> Horário capturado no instante do clique.</p>
+            </section>
+        </main>
+
+        <footer class="site-footer"><span>Um toque. Um registro. Tudo no seu tempo.</span><span>© <span id="current-year">2026</span> BatePonto</span></footer>
+    </div>
+
+    <script src="code.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>
